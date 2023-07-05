@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Guitarra from '../components/Guitarra'
+import Guitarra from '../components/guitarra'
 import styles from '../styles/grid.module.css'
 
 function Tienda({guitarras}) {
