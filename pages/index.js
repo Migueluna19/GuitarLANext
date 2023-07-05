@@ -1,4 +1,4 @@
-import Guitarra from '../components/Guitarra'
+import Guitarra from '../components/guitarra'
 import Post from '../components/post'
 import Curso from '../components/curso'
 import Layout from '../components/layout'
