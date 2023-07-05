@@ -57,19 +57,22 @@ function Producto({guitarra,agregarCarrito}) {
 
 export default Producto
 
-export async function getStaticPaths(){
-    const respuesta=await fetch(`${process.env.API_URL}/guitarras`)
-    const {data}=await respuesta.json()
-    const paths=data?.map(guitarra=>({
-        params:{
-            url:guitarra.attributes.url
-        }
+export async function getStaticPaths() {
+    const respuesta = await fetch(`${process.env.API_URL}/guitarras`)
+   
+    const { data } = await respuesta.json()
+    const paths = data.map(guitarra => ({
+      params: {
+        url: guitarra.attributes.url,
+      },
     }))
-    return{
-        paths,
-        fallback:false
+   
+    console.log(paths)
+    return {
+      paths,
+      fallback: false,
     }
-}
+  }
 
 export async function getStaticProps({params:{url}}){
  const respuesta =await fetch(`${process.env.API_URL}/guitarras?filters[url]=${url}&populate=imagen`)
