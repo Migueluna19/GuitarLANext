@@ -33,7 +33,13 @@ margin: 0 0 1rem 0;
 }
 .nombre{
     font-weight: 700;
-    font-size: 4.2rem;
+    font-size: 2.2rem;
+}
+@media (min-width: 768px){
+    .nombre{
+        font-weight: 700;
+        font-size: 4.2rem;
+    }
 }
 .select{
     all: unset;
@@ -41,8 +47,13 @@ margin: 0 0 1rem 0;
     padding: 1rem;
     text-align: center;
     border-radius: 1rem;
-    width: 100%;
+    width: 80%;
     margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+    .select{
+        width: 100%;
+    }
 }
 .precio{
     font-weight: 700;
@@ -63,9 +74,15 @@ margin: 0 0 1rem 0;
     all: unset;
 position: absolute;
 top: 3rem;
-right: 0.1rem;
+right: 1rem;
 font-weight: 900;
-font-size: 3rem;
+font-size: 1.8rem;
+}
+@media (min-width: 768px){
+    .eliminar{
+    font-size: 3rem;
+    right: 0.2rem;
+    }
 }
 .eliminar:hover{
     cursor: pointer;
